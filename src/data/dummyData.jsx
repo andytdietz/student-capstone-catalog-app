@@ -1,7 +1,12 @@
 const capstones = [
   {
+<<<<<<< HEAD
     id: 1,
     name: "John Doe",
+=======
+    first_name: "John",
+    last_name: "Doe",
+>>>>>>> dcb42611c981bf71bb402f04bcf9c6ccd61acaba
     capstone_project_name: "Online Marketplace",
     screenshot: "https://img.freepik.com/free-vector/gradient-instagram-shop-logo-template_23-2149680701.jpg",
     description:
