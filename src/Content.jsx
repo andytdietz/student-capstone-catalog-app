@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { CapstonesIndex } from "./CapstonesIndex";
 import { CapstonesShow } from "./CapstonesShow";
+import { CapstonesShowPage } from "./CapstonesShowPage";
 import capstones from "./data/dummyData";
 import { Modal } from "./Modal";
+import { Routes, Route } from "react-router-dom";
 
 export function Content() {
   const [capstonesData, setCapstonesData] = useState([]);
@@ -27,13 +29,17 @@ export function Content() {
   useState(handleIndexCapstones);
 
   return (
-    <main>
-      <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
-        <CapstonesIndex capstones={capstonesData} onShowCapstone={handleShowCapstone} />
-        <Modal show={isCapstonesShowVisible} onClose={handleClose}>
-          <CapstonesShow capstone={currentCapstone} />
-        </Modal>
-      </div>
-    </main>
+    <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+      <Routes>
+        <Route
+          path="/capstones"
+          element={<CapstonesIndex capstones={capstones} onShowCapstone={handleShowCapstone} />}
+        />
+        <Route path="/capstones/:id" element={<CapstonesShowPage />} />
+      </Routes>
+      <Modal show={isCapstonesShowVisible} onClose={handleClose}>
+        <CapstonesShow capstone={currentCapstone} />
+      </Modal>
+    </div>
   );
 }
