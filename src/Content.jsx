@@ -28,11 +28,12 @@ export function Content() {
 
   return (
     <main>
-      <h1>Welcome to React!</h1>
-      <CapstonesIndex capstones={capstonesData} onShowCapstone={handleShowCapstone} />
-      <Modal show={isCapstonesShowVisible} onClose={handleClose}>
-        <CapstonesShow capstone={currentCapstone} />
-      </Modal>
+      <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+        <CapstonesIndex capstones={capstonesData} onShowCapstone={handleShowCapstone} />
+        <Modal show={isCapstonesShowVisible} onClose={handleClose}>
+          <CapstonesShow capstone={currentCapstone} />
+        </Modal>
+      </div>
     </main>
   );
 }
