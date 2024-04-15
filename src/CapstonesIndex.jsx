@@ -11,10 +11,10 @@ export function CapstonesIndex(props) {
             {props.capstones.map((capstone) => (
               <div key={capstone.id} className="col">
                 <div className="card h-100">
-                  <img src={capstone.url} className="card-img-top" alt={capstone.name} />
                   <div className="card-body">
                     <h5 className="card-title">{capstone.capstone_project_name}</h5>
                     <p className="card-text">{capstone.description}</p>
+                    <img src={capstone.screenshot} className="card-img-top" alt={capstone.name} />
                   </div>
                 </div>
               </div>
