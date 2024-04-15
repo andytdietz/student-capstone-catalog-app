@@ -17,6 +17,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+.banner {
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(rgb(60, 191, 189), rgb(255, 255, 255));
+}
 a {
   font-weight: 500;
   color: #646cff;

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function CapstonesIndex(props) {
   return (
     <div>
-      <h1> All Capstones:</h1>
+      <h2> All Capstones:</h2>
       <div id="capstones-index">
         <div>
           <div className="row row-cols-1 row-cols-md-3 g-5">

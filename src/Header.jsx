@@ -4,20 +4,63 @@ import React from "react";
 export function Header() {
   return (
     <header>
-      {/* Navbar with Bootstrap classes */}
-      <nav className="navbar navbar-light bg-light justify-content-between">
-        <a className="navbar-brand">Navbar</a>
-        {/* Form for searching */}
-        <form className="form-inline">
-          {/* Search input field */}
-          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          {/* Search button */}
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            Navbar
+          </a>
+
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
-        </form>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link active" href="#capstones-index">
+                  All Capstones
+                </a>
+              </li>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Find Student
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <h1>Student Capstones</h1>
+      <banner />
     </header>
   );
 }
