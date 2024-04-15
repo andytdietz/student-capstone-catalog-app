@@ -12,11 +12,19 @@ export function CapstonesIndex(props) {
             {props.capstones.map((capstone) => (
               <div key={capstone.id} className="col">
                 <div className="card h-100">
-                  <div className="card-body">
-                    <h5 className="card-title">{capstone.capstone_project_name}</h5>
-                    <p className="card-text">{capstone.description}</p>
-                    <img src={capstone.screenshot} className="card-img-top" alt={capstone.name} />
-                    <button onClick={() => props.onShowCapstone(capstone)}>More info</button>
+                  <div className="card text-center">
+                    <div className="card-body">
+                      <h4 className="card-title-center">{capstone.capstone_project_name}</h4>
+                      <h4 className="card-text-center">{capstone.name}</h4>
+                      <button
+                        type="button"
+                        className="btn btn-outline-primary"
+                        onClick={() => props.onShowCapstone(capstone)}
+                      >
+                        More info
+                      </button>
+                      <img src={capstone.screenshot} className="card-img-bottom" alt={capstone.name} />
+                    </div>
                   </div>
                 </div>
               </div>
