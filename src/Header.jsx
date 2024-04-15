@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
@@ -24,9 +25,9 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#capstones-index">
+                <Link to="/capstones" className="nav-link active">
                   All Capstones
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -60,7 +61,6 @@ export function Header() {
           </div>
         </div>
       </nav>
-      <banner />
     </header>
   );
 }
