@@ -1,13 +1,19 @@
-const studentData = [
+const capstones = [
   {
+<<<<<<< HEAD
+    id: 1,
+    name: "John Doe",
+=======
     first_name: "John",
     last_name: "Doe",
+>>>>>>> dcb42611c981bf71bb402f04bcf9c6ccd61acaba
     capstone_project_name: "Online Marketplace",
     screenshot: "https://img.freepik.com/free-vector/gradient-instagram-shop-logo-template_23-2149680701.jpg",
     description:
       "John Doe's capstone project is an Online Marketplace, aiming to revolutionize the way people buy and sell goods online. With a sleek design and user-friendly interface, it offers a seamless shopping experience for users worldwide.",
   },
   {
+    id: 2,
     name: "Jane Smith",
     capstone_project_name: "E-Learning Platform",
     screenshot: "https://cdn.elearningindustry.com/wp-content/uploads/2022/01/shutterstock_1060195475.jpg",
@@ -15,6 +21,7 @@ const studentData = [
       "Jane Smith's capstone project is an E-Learning Platform, designed to provide accessible and interactive educational resources to learners of all ages. It offers a diverse range of courses and tools to enhance the learning experience.",
   },
   {
+    id: 3,
     name: "Alice Johnson",
     capstone_project_name: "Fitness Tracking App",
     screenshot:
@@ -23,6 +30,7 @@ const studentData = [
       "Alice Johnson's capstone project is a Fitness Tracking App, dedicated to helping users achieve their fitness goals. With features like workout tracking, meal planning, and progress visualization, it provides comprehensive support for a healthy lifestyle.",
   },
   {
+    id: 4,
     name: "Bob Williams",
     capstone_project_name: "Recipe Sharing App",
     screenshot:
@@ -31,6 +39,7 @@ const studentData = [
       "Bob Williams's capstone project is a Recipe Sharing App, facilitating the exchange of culinary creations among food enthusiasts. From family favorites to exotic cuisines, users can discover, share, and rate recipes with ease.",
   },
   {
+    id: 5,
     name: "Emily Brown",
     capstone_project_name: "Travel Planner",
     screenshot: "https://i.pinimg.com/originals/2a/54/ac/2a54ac497f9984435890f9b672763839.jpg",
@@ -38,6 +47,7 @@ const studentData = [
       "Emily Brown's capstone project is a Travel Planner, simplifying the process of itinerary creation and trip management. With integrated maps, accommodation booking, and activity suggestions, it empowers travelers to explore the world hassle-free.",
   },
   {
+    id: 6,
     name: "Michael Jones",
     capstone_project_name: "Language Learning Platform",
     screenshot: "https://static-00.iconduck.com/assets.00/language-icon-2048x2048-ys7d03zv.png",
@@ -45,6 +55,7 @@ const studentData = [
       "Michael Jones's capstone project is a Language Learning Platform, offering immersive and interactive language courses for learners of all levels. Through engaging lessons and personalized feedback, it fosters linguistic proficiency and cultural understanding.",
   },
   {
+    id: 7,
     name: "Samantha Taylor",
     capstone_project_name: "Virtual Interior Designer",
     screenshot:
@@ -53,6 +64,7 @@ const studentData = [
       "Samantha Taylor's capstone project is a Virtual Interior Designer, revolutionizing the way users design and visualize their living spaces. With realistic renderings and an extensive catalog of furnishings, it empowers users to bring their design visions to life.",
   },
   {
+    id: 8,
     name: "David Martinez",
     capstone_project_name: "Budget Management App",
     screenshot:
@@ -61,6 +73,7 @@ const studentData = [
       "David Martinez's capstone project is a Budget Management App, empowering users to take control of their finances with ease. From expense tracking to budget planning, it offers comprehensive tools for financial stability and prosperity.",
   },
   {
+    id: 9,
     name: "Sophia Garcia",
     capstone_project_name: "Music Recommendation System",
     screenshot: "https://cdn3.iconfinder.com/data/icons/mii-ui-vol-1/133/music-512.png",
@@ -68,6 +81,7 @@ const studentData = [
       "Sophia Garcia's capstone project is a Music Recommendation System, utilizing advanced algorithms to curate personalized playlists for users based on their music preferences and listening habits. It aims to enhance the music discovery experience and foster a deeper connection with music.",
   },
   {
+    id: 10,
     name: "Matthew Rodriguez",
     capstone_project_name: "Task Management Tool",
     screenshot:
@@ -76,6 +90,7 @@ const studentData = [
       "Matthew Rodriguez's capstone project is a Task Management Tool, streamlining the organization and prioritization of tasks for individuals and teams. With features like task categorization, deadline reminders, and progress tracking, it enhances productivity and efficiency.",
   },
   {
+    id: 11,
     name: "Olivia Hernandez",
     capstone_project_name: "Recipe Organizer",
     screenshot: "https://cdn-icons-png.flaticon.com/512/1869/1869042.png",
@@ -83,6 +98,7 @@ const studentData = [
       "Olivia Hernandez's capstone project is a Recipe Organizer, simplifying meal planning and grocery shopping with a centralized repository for recipes. Users can easily categorize, search, and access their favorite recipes anytime, anywhere.",
   },
   {
+    id: 12,
     name: "William Lopez",
     capstone_project_name: "Fitness Challenge App",
     screenshot:
@@ -92,4 +108,4 @@ const studentData = [
   },
 ];
 
-export default studentData;
+export default capstones;
