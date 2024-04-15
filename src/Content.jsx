@@ -110,9 +110,6 @@ export function Content() {
   return (
     <main>
       <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
-        <div>
-          <banner />
-        </div>
         <CapstonesIndex capstones={capstones} />
       </div>
     </main>
