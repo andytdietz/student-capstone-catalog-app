@@ -16,6 +16,7 @@ export function Header() {
           </button>
         </form>
       </nav>
+      <h1>Student Capstones</h1>
     </header>
   );
 }
