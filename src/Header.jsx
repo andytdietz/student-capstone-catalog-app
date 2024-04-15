@@ -3,20 +3,49 @@ import React from "react";
 export function Header() {
   return (
     <header>
-      {/* Navbar with Bootstrap classes */}
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <a className="navbar-brand">Navbar</a>
-        {/* Form for searching */}
-        <form className="form-inline">
-          {/* Search input field */}
-          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          {/* Search button */}
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Navbar
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </form>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#capstones-index">
+                  All Capstones
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Features
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">
+                  Disabled
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <h1>Student Capstones</h1>
     </header>
   );
 }
