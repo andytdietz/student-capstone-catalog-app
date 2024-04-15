@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export function CapstonesIndex(props) {
   return (
@@ -15,6 +16,7 @@ export function CapstonesIndex(props) {
                     <h5 className="card-title">{capstone.capstone_project_name}</h5>
                     <p className="card-text">{capstone.description}</p>
                     <img src={capstone.screenshot} className="card-img-top" alt={capstone.name} />
+                    <button onClick={() => props.onShowCapstone(capstone)}>More info</button>
                   </div>
                 </div>
               </div>

@@ -1,8 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Header } from "./Header";
 import { Content } from "./Content";
 import { Footer } from "./Footer";
-import { Axios } from "axios";
+import axios from "axios";
+import { BrowserRouter } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Button } from "bootstrap";
 
 function App() {
   return (
