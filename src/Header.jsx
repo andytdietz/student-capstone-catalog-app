@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header>
       {/* Navbar with Bootstrap classes */}
-      <nav className="navbar navbar-light bg-light justify-content-between">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <a className="navbar-brand">Navbar</a>
         {/* Form for searching */}
         <form className="form-inline">

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { CapstonesIndex } from "./CapstonesIndex";
 import { useState, useEffect } from "react";
 
@@ -106,9 +105,6 @@ const capstones = [
       "William Lopez's capstone project is a Fitness Challenge App, inspiring users to reach their fitness goals through gamification and community engagement. With challenges, leaderboards, and progress tracking, it fosters motivation and accountability in achieving a healthy lifestyle.",
   },
 ];
-=======
-import "bootstrap/dist/css/bootstrap.min.css";
->>>>>>> dcb42611c981bf71bb402f04bcf9c6ccd61acaba
 
 export function Content() {
   return (
