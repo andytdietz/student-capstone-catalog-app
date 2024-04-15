@@ -109,8 +109,12 @@ const capstones = [
 export function Content() {
   return (
     <main>
-      <h1>Welcome to React!</h1>
-      <CapstonesIndex capstones={capstones} />
+      <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+        <div>
+          <banner />
+        </div>
+        <CapstonesIndex capstones={capstones} />
+      </div>
     </main>
   );
 }
