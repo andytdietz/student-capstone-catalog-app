@@ -9,13 +9,13 @@ export function CapstonesIndex(props) {
   return (
     <div className="container">
       <div id="capstones-index">
-        <h2 className="mb-4" style={{ marginTop: "80px" }}>
+        <h2 className="text-center mb-4" style={{ fontFamily: "Sedan, serif", marginTop: "80px" }}>
           All Capstones
         </h2>
         <div className="row">
           <div className="col">
             <p>
-              Search by Name
+              Search by Name:
               <input
                 type="text"
                 value={searchFilter}
@@ -26,7 +26,7 @@ export function CapstonesIndex(props) {
                 style={{
                   backgroundColor: "white",
                   color: "black",
-                  border: "1px solid gray",
+                  border: "1px primary",
                   borderRadius: "5px",
                   padding: "5px",
                 }}
@@ -52,17 +52,22 @@ export function CapstonesIndex(props) {
               .map((capstone) => (
                 <div key={capstone.id} className="col mb-4">
                   <div className="card h-100 d-flex flex-column">
-                    <div className="card-body">
-                      <h5 className="card-title">{capstone.name}</h5>
-                      <p className="card-text">
-                        By {capstone.first_name} {capstone.last_name}
-                      </p>
-                      <img
-                        src={capstone.screenshot}
-                        className="card-img-top img-fluid"
-                        style={{ height: "200px", objectFit: "cover" }}
-                        alt={capstone.first_name}
-                      />
+                    <div className="card text-center">
+                      <div className="card-body">
+                        <h4 className="card-title" style={{ fontFamily: "Sedan, serif", fontWeight: 900 }}>
+                          {capstone.name}
+                        </h4>
+                        <h5>________________</h5>
+                        <p className="card-text">
+                          By {capstone.first_name} {capstone.last_name}
+                        </p>
+                        <img
+                          src={capstone.screenshot}
+                          className="card-img-top img-fluid"
+                          style={{ height: "200px", objectFit: "cover" }}
+                          alt={capstone.first_name}
+                        />
+                      </div>
                     </div>
                     <div className="mt Auto d-flex justify-content-center py-3">
                       <Link to={`/capstones/${capstone.id}`} className="btn btn-primary mt auto">

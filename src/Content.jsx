@@ -29,7 +29,10 @@ export function Content() {
   useState(handleIndexCapstones);
 
   return (
-    <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
+    <div
+      className="p-3 mb-2 bg-primary-subtle
+    text-primary-emphasis"
+    >
       <Routes>
         <Route path="/" element={<CapstonesIndex capstones={capstones} onShowCapstone={handleShowCapstone} />} />
         <Route path="/capstones/:id" element={<CapstonesShowPage />} />
