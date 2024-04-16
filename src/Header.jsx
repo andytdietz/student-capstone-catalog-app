@@ -33,32 +33,14 @@ export function Header() {
                 </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <Link
+                  to="https://www.linkedin.com/in/andrew-dietz/"
+                  className="nav-link active"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Find Student
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+                  Student Portal
+                </Link>
               </li>
             </ul>
           </div>
