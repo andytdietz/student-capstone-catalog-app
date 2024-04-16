@@ -35,7 +35,10 @@ export function CapstonesIndex(props) {
               />
               <datalist id="capstone=suggestions">
                 {props.capstones.map((capstone) => (
-                  <option key={capstone.id} value={`${capstone.first_name} ${capstone.last_name}`} />
+                  <option
+                    key={capstone.student_id}
+                    value={`${capstone.student_id.first_name} ${capstone.student_id.last_name}`}
+                  />
                 ))}
               </datalist>
             </p>
@@ -43,7 +46,7 @@ export function CapstonesIndex(props) {
           <div className="row row-cols-1 row-cols-md-3 g-4">
             {props.capstones
               .filter((capstone) => {
-                const fullName = `${capstone.first_name} ${capstone.last_name}`;
+                const fullName = `${capstone.student_id.first_name} ${capstone.student_id.last_name}`;
                 const searchLower = searchFilter.toLowerCase();
                 return (
                   capstone.first_name.toLowerCase().includes(searchLower) ||
@@ -52,7 +55,7 @@ export function CapstonesIndex(props) {
                 );
               })
               .map((capstone) => (
-                <div key={capstone.id} className="col mb-4">
+                <div key={capstone.student_id} className="col mb-4">
                   <div className="card h-100 d-flex flex-column">
                     <div className="card text-center">
                       <div className="card-body">
@@ -61,7 +64,7 @@ export function CapstonesIndex(props) {
                         </h4>
                         <h5>________________</h5>
                         <p className="card-text">
-                          By {capstone.first_name} {capstone.last_name}
+                          By {capstone.student_id.first_name} {capstone.student_id.last_name}
                         </p>
                         <img
                           src={capstone.screenshot}
