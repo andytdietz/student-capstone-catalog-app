@@ -1,20 +1,24 @@
-import { useState } from "react";
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { CapstonesIndex } from "./CapstonesIndex";
-import { CapstonesShow } from "./CapstonesShow";
+// import { CapstonesShow } from "./CapstonesShow";
 import { CapstonesShowPage } from "./CapstonesShowPage";
-import capstones from "./data/dummyData";
+// import capstones from "./data/dummyData";
 import { Modal } from "./Modal";
 import { Routes, Route } from "react-router-dom";
 
 export function Content() {
-  const [capstonesData, setCapstonesData] = useState([]);
+  const [capstones, setCapstones] = useState([]);
   const [isCapstonesShowVisible, setIsCapstonesShowVisible] = useState(false);
   const [currentCapstone, setCurrentCapstone] = useState({});
 
   const handleIndexCapstones = () => {
-    setCapstonesData(capstones);
+    console.log("handleIndexCapstones");
+    axios.get("http://localhost:3000/capstones.json").then((response) => {
+      console.log(response.data);
+      setCapstones(response.data);
+    });
   };
-
   const handleShowCapstone = (capstone) => {
     console.log("handleShowCapstone", capstone);
     setIsCapstonesShowVisible(true);
