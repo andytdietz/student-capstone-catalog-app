@@ -1,15 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
-
+          <Link to="/" className="navbar-brand" onClick={scrollToTop}>
+            <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,9 +28,9 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#capstones-index">
+                <Link to="/" className="nav-link active" onClick={scrollToTop}>
                   All Capstones
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -60,7 +64,6 @@ export function Header() {
           </div>
         </div>
       </nav>
-      <banner />
     </header>
   );
 }

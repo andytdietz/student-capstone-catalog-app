@@ -3,9 +3,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function CapstonesIndex(props) {
+  const [searchFilter, setSearchFilter] = useState("");
+  console.log(props);
+
   return (
-    <div>
-      <h2> All Capstones:</h2>
+    <div className="container">
       <div id="capstones-index">
         <div>
           <div className="row row-cols-1 row-cols-md-3 g-5">
