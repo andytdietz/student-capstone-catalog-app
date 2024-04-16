@@ -31,15 +31,12 @@ export function Content() {
   return (
     <div className="p-3 mb-2 bg-primary-subtle text-primary-emphasis">
       <Routes>
-        <Route
-          path="/capstones"
-          element={<CapstonesIndex capstones={capstones} onShowCapstone={handleShowCapstone} />}
-        />
+        <Route path="/" element={<CapstonesIndex capstones={capstones} onShowCapstone={handleShowCapstone} />} />
         <Route path="/capstones/:id" element={<CapstonesShowPage />} />
       </Routes>
-      <Modal show={isCapstonesShowVisible} onClose={handleClose}>
+      {/* <Modal show={isCapstonesShowVisible} onClose={handleClose}>
         <CapstonesShow capstone={currentCapstone} />
-      </Modal>
+      </Modal> */}
     </div>
   );
 }
