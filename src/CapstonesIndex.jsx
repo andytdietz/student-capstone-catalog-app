@@ -20,6 +20,7 @@ export function CapstonesIndex(props) {
                 onChange={(event) => setSearchFilter(event.target.value)}
                 list="capstone-suggestions"
                 className="form-control"
+                placeholder="John Doe"
                 style={{
                   backgroundColor: "white",
                   color: "black",
