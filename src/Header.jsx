@@ -3,6 +3,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export function Header() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
@@ -22,7 +26,7 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/" className="nav-link active">
+                <Link to="/" className="nav-link active" onClick={scrollToTop}>
                   All Capstones
                 </Link>
               </li>
