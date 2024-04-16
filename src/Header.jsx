@@ -9,10 +9,10 @@ export function Header() {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav className="navbar navbar-expand-lg bg-dark-tertiary fixed-top-">
         <div className="container-fluid">
           <Link to="/" className="navbar-brand" onClick={scrollToTop}>
-            <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
+            <img src="/actualize-logo.png" alt="" style={{ maxWidth: "35px", maxHeight: "50px" }} />
           </Link>
           <button
             className="navbar-toggler"
