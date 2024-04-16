@@ -11,18 +11,25 @@ export function CapstonesShowPage() {
     const foundCapstone = capstones.find((capstone) => capstone.id === parseInt(id));
     setCapstone(foundCapstone);
   }, [id]);
+
   return (
-    <div id="capstones-show">
-      <h2>{capstone.name}</h2>
-      <h3>{capstone.capstone_project_name}</h3>
-      <p>{capstone.description}</p>
-      <p>
-        URL:
-        <a href="https://github.com/andytdietz/mini-capstone-api" target="_blank" rel="noopener noreferrer">
-          https://github.com/andytdietz/mini-capstone-api
-        </a>
-      </p>
-      <img src={capstone.screenshot} alt="" />
+    <div id="capstones-show" className="container mt-4">
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title mb-3">
+            {capstone.first_name} {capstone.last_name}
+          </h2>
+          <h3 className="card-subtitle mb-3">{capstone.name}</h3>
+          <p className="card-text mb-3">{capstone.description}</p>
+          <p className="card-text mb-3">
+            URL:
+            <a href="https://github.com/andytdietz/mini-capstone-api" target="_blank" rel="noopener noreferrer">
+              https://github.com/andytdietz/mini-capstone-api
+            </a>
+          </p>
+          <img src={capstone.screenshot} alt="" className="img-fluid" />
+        </div>
+      </div>
     </div>
   );
 }

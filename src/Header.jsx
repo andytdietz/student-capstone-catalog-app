@@ -7,10 +7,7 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
-
+          <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
           <button
             className="navbar-toggler"
             type="button"
@@ -25,7 +22,7 @@ export function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/capstones" className="nav-link active">
+                <Link to="/" className="nav-link active">
                   All Capstones
                 </Link>
               </li>
