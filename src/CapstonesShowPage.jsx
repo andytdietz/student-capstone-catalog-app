@@ -16,10 +16,10 @@ export function CapstonesShowPage() {
     <div id="capstones-show" className="container mt-5">
       <div className="card">
         <div className="card-body">
+          <h1 className="card-subtitle mb-3">{capstone.name}</h1>
           <h2 className="card-title mb-3">
             {capstone.first_name} {capstone.last_name}
           </h2>
-          <h3 className="card-subtitle mb-3">{capstone.name}</h3>
           <p className="card-text mb-3">{capstone.description}</p>
           <p className="card-text mb-3">
             <a href="https://github.com/andytdietz/mini-capstone-api" target="_blank" rel="noopener noreferrer">
