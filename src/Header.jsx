@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
           <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
           <button
