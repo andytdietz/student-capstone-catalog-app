@@ -9,7 +9,7 @@ export function CapstonesIndex(props) {
   return (
     <div className="container">
       <div id="capstones-index">
-        <h2 className="text-center mb-4" style={{ fontFamily: "Sedan, serif" }}>
+        <h2 className="text-center mb-4" style={{ fontFamily: "Sedan, serif", marginTop: "80px" }}>
           All Capstones
         </h2>
         <div className="row">
