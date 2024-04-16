@@ -11,7 +11,9 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div className="container-fluid">
-          <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
+          <Link to="/" className="navbar-brand" onClick={scrollToTop}>
+            <img src="/actualize-logo.png" alt="" style={{ maxWidth: "100px", maxHeight: "50px" }} />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
