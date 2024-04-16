@@ -9,7 +9,9 @@ export function CapstonesIndex(props) {
   return (
     <div className="container">
       <div id="capstones-index">
-        <h2 className="mb-4"> All Capstones</h2>
+        <h2 className="mb-4" style={{ marginTop: "80px" }}>
+          All Capstones
+        </h2>
         <div className="row">
           <div className="col">
             <p>
