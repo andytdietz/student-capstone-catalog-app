@@ -22,9 +22,8 @@ export function CapstonesShowPage() {
           <h3 className="card-subtitle mb-3">{capstone.name}</h3>
           <p className="card-text mb-3">{capstone.description}</p>
           <p className="card-text mb-3">
-            Capstone URL:
             <a href="https://github.com/andytdietz/mini-capstone-api" target="_blank" rel="noopener noreferrer">
-              https://github.com/andytdietz/mini-capstone-api
+              {capstone.name}
             </a>
           </p>
           <img src={capstone.screenshot} alt="" className="img-fluid" />
